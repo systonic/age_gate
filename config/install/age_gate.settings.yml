@@ -1,0 +1,5 @@
+age_gate_age_limit: 21
+age_gate_show_dob: false
+age_gate_urls_to_skip: 'user'
+age_gate_description: ''
+age_gate_user_agents: 'Googlebot\nGooglebot-Mobile\nGooglebot-Image\nbingbot\nmsnbot\nslurp'

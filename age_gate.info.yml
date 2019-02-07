@@ -1,0 +1,4 @@
+name: 'Age Gate'
+description: 'Renders form by redirecting the user to the form and back after adding their age.'
+core: 8.x
+type: module

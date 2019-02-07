@@ -1,0 +1,3 @@
+administer age gate:
+  title: 'Configure Age Gate'
+  description: 'Allows users to configure Age Gate settings.'

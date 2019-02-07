@@ -1,0 +1,10 @@
+services:
+  age_gate.age_gate_cache:
+    class: \Drupal\age_gate\PageCache\AgeGateCache
+    arguments: ['@session_configuration']
+    tags:
+      - { name: page_cache_request_policy }
+  age_gate.age_gate_redirect:
+    class: \Drupal\age_gate\EventSubscriber\AgeGateRedirect
+    tags:
+      - { name: event_subscriber }

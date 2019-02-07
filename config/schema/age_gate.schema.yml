@@ -1,0 +1,19 @@
+age_gate.settings:
+  type: mapping
+  label: 'Age Gate Settings'
+  mapping:
+    age_gate_age_limit:
+      type: integer
+      label: 'Age limit'
+    age_gate_show_dob:
+      type: boolean
+      label: 'Enter date of birth'
+    age_gate_urls_to_skip:
+      type: string
+      label: 'URLs to skip'
+    age_gate_description:
+      type: string
+      label: 'Message to the user'
+    age_gate_user_agents:
+      type: string
+      label: 'Search Agents to skip'

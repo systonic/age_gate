@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Renders form by redirecting the user to the form and back after adding their age.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function age_gate_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#age_gate':
+      return '<p>' . t('Adds an age gate form by redirecting the user to the form and back after adding their age.') . '</p>';
+  }
+}
