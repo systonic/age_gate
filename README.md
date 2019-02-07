@@ -17,4 +17,4 @@ configuration page directly at admin/config/system/age-gate.
 
 ## Credit
 
-The Age Gate module was originally developed by Sylvain Larras of Systonic.
+The Age Gate module was developed by Sylvain Larras of Systonic, originally based on the module Age Verification (https://www.drupal.org/project/age_verification)
