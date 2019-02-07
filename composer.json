@@ -4,7 +4,7 @@
   "type": "drupal-module",
   "keywords": ["php", "form", "age", "gate"],
   "homepage": "https://github.com/systonic/age_gate",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Sylvain Larras"
