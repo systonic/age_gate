@@ -1,7 +1,7 @@
 {
   "name": "systonic/age_gate",
   "description": "Renders form by redirecting the user to the form and back after adding their age.",
-  "type": "drupal-module",
+  "type": "drupal-module-systonic",
   "license": "GPL-2.0+",
   "keywords": ["php", "form", "age", "gate"],
   "homepage": "https://github.com/systonic/age_gate",
