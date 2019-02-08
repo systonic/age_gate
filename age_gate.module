@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Renders form by redirecting the user to the form and back after adding their age.
+ * Legal drinking age form.
  */
 
 /**
