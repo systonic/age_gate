@@ -24,6 +24,19 @@ class AgeGateForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('age_gate.settings');
 
+    $form['logo'] = [
+      '#type' => 'markup',
+      '#markup' => '<div class="logo"><img src="' . theme_get_setting('logo.url') . '" /></div>',
+    ];
+
+    // Output the admin description text in the form if it was set.
+    if (!empty($config->get('age_gate_description'))) {
+      $form['custom_age_gate_description'] = [
+        '#type' => 'markup',
+        '#markup' => '<p>' . $config->get('age_gate_description') . '</p>',
+      ];
+    }
+
     if ($config->get('age_gate_show_dob')) {
       $form['dob'] = [
         '#title' => $this->t('Please enter your date of birth'),
@@ -46,17 +59,9 @@ class AgeGateForm extends FormBase {
       ];
     }
 
-    // Output the admin description text in the form if it was set.
-    if (!empty($config->get('age_gate_description'))) {
-      $form['custom_age_gate_description'] = [
-        '#type' => 'markup',
-        '#markup' => '<p>' . $config->get('age_gate_description') . '</p>',
-      ];
-    }
-
     $form['submit'] = [
       '#type' => 'submit',
-      '#value' => 'Submit',
+      '#value' => $this->t('Submit'),
     ];
 
     return $form;
